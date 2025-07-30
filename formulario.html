@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form class="formulario">
+        <h2>Registro clientes  </h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="email">Edad</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        
+        <label for="opcion">Seleccione una opcion:</label>
+        <select id="opcion" name="opcion" required>
+            <option value=""> Tipo de documento  </option>
+            <option value="opcion1"> T.I </option>
+            <option value="opcion2">C.C  </option>
+            <option value="opcion3">C.E</option>
+        </select>
+     
+
+
+        <!-- Checkbox -->
+ 
+<fieldset style="margin-top:15px; border:none; padding:0;">
+  <legend style="font-weight:bold; margin-bottom:5px;">Seleccione sus preferencias de servicio:</legend>
+
+  <div>
+    <label>
+      <input type="checkbox" name="preferencias[]" value="cuidado personal">
+      Lavanderia 
+    </label>
+    <label>
+      <input type="checkbox" name="preferencias[]" value="Spa">
+      Cuidado de niños 
+    </label>
+  
+    <label>
+      <input type="checkbox" name="preferencias[]" value="Cuidado facial">
+        Aceo domestico
+    </label>
+  
+    <label>
+      <input type="checkbox" name="preferencias[]" value="Cuidado del cabello">
+        Cuidado de mascotas 
+    </label>
+  </div>
+</fieldset>
+
+
+<label for="opcion">Seleccione una opción:</label>
+        <select id="opcion" name="opcion" required>
+            <option value=""> Dias de servicio </option>
+            <option value="opcion1">Lunes a viernes </option>
+            <option value="opcion2">Fines de semana </option>
+            <option value="opcion3">Algunos dias de la semana</option>
+        </select>
+
+ <fieldset style="margin-top:15px; border:none; padding:0;">
+            <legend style="font-weight:bold; margin-bottom:5px;">Seleccione servicios adicionales:</legend>
+            <label><input type="checkbox" name="preferencias[]" value="Are"> Cuidado de adultos  </label><br>
+            <label><input type="checkbox" name="preferencias[]" value="ofertas"> limpieza diaria </label><br>
+            <label><input type="checkbox" name="preferencias[]" value="actualizaciones">Higiene del medio </label><br>
+        </fieldset>
+        
+        <label for="comentarios">Comentarios o sugerencias:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
